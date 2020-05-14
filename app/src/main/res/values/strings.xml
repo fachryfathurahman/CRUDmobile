@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">modul6</string>
+    <string name="masukkan_nim">Masukkan nim</string>
+    <string name="masukkan_jurusan">Masukkan Jurusan</string>
+    <string name="masukkan_nama">Masukkan Nama</string>
+    <string name="modul_6_pemrograman_mobile">modul 6 pemrograman mobile</string>
+    <string name="crud_android_mysql">CRUD ANDROID MySQL</string>
+    <string name="masukkan_email">Masukkan Email</string>
+    <string name="update_mahasiswa">Update Mahasiswa</string>
+</resources>

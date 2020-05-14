@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/crud_android_mysql"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modul_6_pemrograman_mobile"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/edtNim"
+            android:layout_width="289dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_button"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="@string/masukkan_nim"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="0.525"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/edtNama"
+            android:layout_width="289dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_button"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/masukkan_nama"
+            android:textColor="@android:color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/edtNim"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edtNim"
+            app:layout_constraintTop_toBottomOf="@+id/edtNim" />
+
+        <EditText
+            android:id="@+id/edtJurusan"
+            android:layout_width="289dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_button"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:textColor="@android:color/white"
+            android:hint="@string/masukkan_jurusan"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/edtNama"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edtNama"
+            app:layout_constraintTop_toBottomOf="@+id/edtNama" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="289dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_button"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/masukkan_email"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/edtJurusan"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="@+id/edtJurusan"
+            app:layout_constraintTop_toBottomOf="@+id/edtJurusan" />
+
+        <Button
+            android:id="@+id/btnTambah"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_button"
+            android:text="TAMBAH MAHASISWA"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/edtEmail"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="@+id/edtEmail"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+        <Button
+            android:id="@+id/btnDaftar"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/bg_button"
+            android:text="DAFTAR MAHASISWA"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/btnTambah"
+            app:layout_constraintStart_toStartOf="@+id/btnTambah"
+            app:layout_constraintTop_toBottomOf="@+id/btnTambah" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

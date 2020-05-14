@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:text="@string/update_mahasiswa"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtNimUp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_width="289dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_button"
+            android:layout_marginTop="48dp"
+            android:ems="10"
+            android:hint="@string/masukkan_nim"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/edtNamaUp"
+
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_width="289dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_button"
+            android:layout_marginTop="28dp"
+
+            android:ems="10"
+            android:hint="@string/masukkan_nama"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/edtNimUp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edtNimUp"
+            app:layout_constraintTop_toBottomOf="@+id/edtNimUp" />
+
+        <EditText
+            android:id="@+id/edtJurusanUp"
+            android:layout_width="289dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_button"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/masukkan_jurusan"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/edtNamaUp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edtNamaUp"
+            app:layout_constraintTop_toBottomOf="@+id/edtNamaUp" />
+
+        <EditText
+            android:id="@+id/edtEmailUp"
+            android:layout_width="289dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_button"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/masukkan_email"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/edtJurusanUp"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="@+id/edtJurusanUp"
+            app:layout_constraintTop_toBottomOf="@+id/edtJurusanUp" />
+
+        <Button
+            android:id="@+id/btnUp"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_button"
+            android:text="UPDATE MAHASISWA"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/edtEmailUp"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="@+id/edtEmailUp"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmailUp" />
+
+        <Button
+            android:id="@+id/btnHapus"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/bg_button"
+            android:text="HAPUS MAHASISWA"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/btnUp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btnUp"
+            app:layout_constraintTop_toBottomOf="@+id/btnUp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
